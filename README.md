@@ -4,7 +4,7 @@ This repository contains changes inorder to build the AirSim plugin using the `g
 
 Changes have been done to following files:
 * [setup.sh](setup.sh) 
-* [build.sh](build.sh) files 
+* [build.sh](build.sh)  
 * [`cmake/CMakeLists.txt`](cmake/CMakeLists.txt) 
 * [`cmake/MavLinkCom/CMakeLists.txt`](cmake/MavLinkCom/CMakeLists.txt)
 
