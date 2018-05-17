@@ -1,3 +1,9 @@
+## Changelog
+
+Changes have been made to the [setup.sh](setup.sh) and [build.sh](build.sh) files inorder to build the AirSim plugin using the `g++` compiler instead of `clang`. Moreover the `CMakeLists.txt` has been altered in [`cmake`](cmake/CMakeLists.txt) and [`cmake/MavLinkCom`](cmake/MavLinkCom/CMakeLists.txt) directories for this purpose. 
+
+These changes have been done to enable ROS integration with the plugin (till the official release is done). To interface with ROS use the package available [here](https://github.com/Mayankm96/publishAirsimImgs).
+
 # Welcome to AirSim
 
 AirSim is a simulator for drones, cars and more built on Unreal Engine. It is open-source, cross platform and supports hardware-in-loop with popular flight controllers such as PX4 for physically and visually realistic simulations. It is developed as an Unreal plugin that can simply be dropped in to any Unreal environment you want.
