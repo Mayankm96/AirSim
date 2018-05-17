@@ -82,7 +82,7 @@ fi
 if [ "$(uname)" == "Darwin" ]; then
     rm -rf ./AirLib/deps/eigen3/Eigen
 else
-    sudo rm -rf ./AirLib/deps/eigen3/Eigen
+    rm -rf ./AirLib/deps/eigen3/Eigen
 fi
 echo "downloading eigen..."
 wget http://bitbucket.org/eigen/eigen/get/3.3.2.zip
