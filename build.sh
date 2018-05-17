@@ -19,8 +19,15 @@ if [ ! -d "./cmake_build" ]; then
     exit 1
 fi
 
+# build settings
 export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
+
+if [ "$(uname)" == "Darwin" ]; then
+    CMAKE="$(greadlink -f cmake_build/bin/cmake)"
+else
+    CMAKE="$(readlink -f cmake_build/bin/cmake)"
+fi
 
 #install EIGEN library
 if [[ !(-d "./AirLib/deps/eigen3/Eigen") ]]; then 
