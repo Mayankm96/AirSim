@@ -1,8 +1,20 @@
 ## Changelog
 
-Changes have been made to the [setup.sh](setup.sh) and [build.sh](build.sh) files inorder to build the AirSim plugin using the `g++` compiler instead of `clang`. Moreover the `CMakeLists.txt` has been altered in [`cmake`](cmake/CMakeLists.txt) and [`cmake/MavLinkCom`](cmake/MavLinkCom/CMakeLists.txt) directories for this purpose. 
+This repository contains changes inorder to build the AirSim plugin using the `g++` compiler instead of `clang`. It has been tested on Ubuntu 16.04LTS.
 
-These changes have been done to enable ROS integration with the plugin (till the official release is done). To interface with ROS use the package available [here](https://github.com/Mayankm96/publishAirsimImgs).
+Changes have been done to following files:
+* [setup.sh](setup.sh) 
+* [build.sh](build.sh) files 
+* [`cmake/CMakeLists.txt`](cmake/CMakeLists.txt) 
+* [`cmake/MavLinkCom/CMakeLists.txt`](cmake/MavLinkCom/CMakeLists.txt)
+
+These changes have been done to link the client-side of the plugin with projects that need `gcc` compilation such as for ROS integration (till the official release is done). To interface with ROS, an example package is available [here](https://github.com/Mayankm96/publishAirsimImgs).
+
+### Disclaimer
+
+Some of these changes have been suggested by Behzad Boroujerdian and Hasan Genc from the Department Of Electrical and Computer Engineering at The University of Texas at Austin in the repository [publishAirsimImgs](https://github.com/marcelinomalmeidan/publishAirsimImgs). 
+
+---
 
 # Welcome to AirSim
 
