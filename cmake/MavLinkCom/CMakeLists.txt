@@ -22,7 +22,6 @@ include_directories(
 )
 
 
-LIST(APPEND MAVLINK_SOURCES "${AIRSIM_ROOT}/MavLinkCom/common_utils/Utils.cpp")
 LIST(APPEND MAVLINK_SOURCES "${AIRSIM_ROOT}/MavLinkCom/common_utils/FileSystem.cpp")
 LIST(APPEND MAVLINK_SOURCES "${AIRSIM_ROOT}/MavLinkCom/common_utils/ThreadUtils.cpp")
 LIST(APPEND MAVLINK_SOURCES "${AIRSIM_ROOT}/MavLinkCom/src/MavLinkConnection.cpp") 
@@ -55,7 +54,4 @@ ENDIF()
 
 add_library(MavLinkCom STATIC ${MAVLINK_SOURCES})
 
-## Add these to your app that links this library:			
-# find_package(Threads REQUIRED)
-# target_link_libraries (${PROJECT_NAME} ${CMAKE_THREAD_LIBS_INIT})
-
+CommonTargetLink()
