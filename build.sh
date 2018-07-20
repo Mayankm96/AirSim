@@ -30,7 +30,7 @@ else
 fi
 
 #install EIGEN library
-if [[ !(-d "./AirLib/deps/eigen3/Eigen") ]]; then 
+if [[ !(-d "./AirLib/deps/eigen3/Eigen") ]]; then
     echo "eigen is not installed. Please run setup.sh first."
     exit 1
 fi
@@ -60,7 +60,7 @@ pushd $build_dir  >/dev/null
 # final linking of the binaries can fail due to a missing libc++abi library
 # (happens on Fedora, see https://bugzilla.redhat.com/show_bug.cgi?id=1332306).
 # So we only build the libraries here for now
-make 
+make
 popd >/dev/null
 
 
@@ -91,7 +91,7 @@ echo " AirSim plugin is built! Here's how to build Unreal project."
 echo "=================================================================="
 echo "If you are using Blocks environment, its already updated."
 echo "If you are using your own environment, update plugin using,"
-echo "rsync -t -r Unreal/Plugins path/to/MyUnrealProject"
+echo "rsync -a --delete Unreal/Plugins path/to/MyUnrealProject"
 echo ""
 echo "For help see:"
 echo "https://github.com/Microsoft/AirSim/blob/master/docs/build_linux.md"
