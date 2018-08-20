@@ -8,7 +8,7 @@ Changes have been done to following files:
 * [`cmake/CMakeLists.txt`](cmake/CMakeLists.txt) 
 * [`cmake/MavLinkCom/CMakeLists.txt`](cmake/MavLinkCom/CMakeLists.txt)
 
-These changes have been done to link the client-side of the plugin with projects that need `gcc` compilation such as for ROS integration (till the official release is done). To interface with ROS, an example package is available [here](https://github.com/Mayankm96/publishAirsimImgs).
+These changes have been done to link the client-side of the plugin with projects that need `gcc` compilation such as for ROS integration (till the official release is done). To interface with ROS, an example package is available [here](https://github.com/Mayankm96/airsim_img_publisher).
 
 ### Note
 
